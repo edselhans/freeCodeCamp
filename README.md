@@ -1,5 +1,5 @@
 # freeCodeCamp
-Solutions to fCC JavaScript Algorithm Challenges
+Solutions to fCC Challenges
 
 A newbie coder's attempts at scripting, all comments and suggestions are very much so appreciated.
 
