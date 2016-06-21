@@ -23,7 +23,7 @@ function largestOfFour(arr) {
   return arr4;
 }
 
-//Third iteration -EUT
+//Third iteration -EAU
 function largestOfFour(arr) {
   var arr4 = [],
       arrMax = 0;
