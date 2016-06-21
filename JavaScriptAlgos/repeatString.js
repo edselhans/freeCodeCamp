@@ -23,10 +23,3 @@ function repeatStringNumTimes(str, num) {
   }
 }
 
-//Third iteration -IT
-function repeatStringNumTimes(str, num) {
-  if (num < 0) {
-    return "";
-  } else 
-  return str.repeat(num);
-}
