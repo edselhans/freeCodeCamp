@@ -1,4 +1,4 @@
-/* First iteration
+//First iteration -EUT
 function truncateString(str, num) {
   if (str.length > num) {
     if (num > 3) {
@@ -10,9 +10,8 @@ function truncateString(str, num) {
     return str;
   }
 }
-*/
 
-/* Second iteration
+//Second iteration -EUT
 function truncateString(str, num) {
   if (str.length > num) {
     var i = 1,
@@ -31,8 +30,8 @@ function truncateString(str, num) {
     return str;
   }
 }
-*/
 
+//Thirs iteration -EUT
 function truncateString(str, num) {
   if (str.length > num) {
     var i = 1,
@@ -47,5 +46,18 @@ function truncateString(str, num) {
     return truncStr + "...";
   } else {
     return str;
+  }
+}
+
+//Fourth iteration - IT
+function truncateString(str, num) {
+  if (str.length > num && num > 3) {
+    var long = str.slice(0, num - 3);    
+    return long += "...";
+  } else if  (str.length > num && num <= 3) {
+      var short = str.slice(0, num);
+      return short += "...";
+  } else {
+      return str;
   }
 }
