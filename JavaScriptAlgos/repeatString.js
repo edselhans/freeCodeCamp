@@ -1,4 +1,4 @@
-/* First iteration
+//First iteration -EUA
 function repeatStringNumTimes(str, num) {
   if (num < 0) {
     return "";
@@ -8,8 +8,8 @@ function repeatStringNumTimes(str, num) {
     return str.repeat(num);
   }
 }
-*/
 
+//Second iteration - EUA
 function repeatStringNumTimes(str, num) {
   if (num < 0) {
     return "";
@@ -21,4 +21,12 @@ function repeatStringNumTimes(str, num) {
     }
     return repStr;
   }
+}
+
+//Third iteration -IT
+function repeatStringNumTimes(str, num) {
+  if (num < 0) {
+    return "";
+  } else 
+  return str.repeat(num);
 }
