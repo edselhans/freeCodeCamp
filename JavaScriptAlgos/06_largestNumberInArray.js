@@ -1,4 +1,4 @@
-/* First iteration
+//First iteration -EAU
 function largestOfFour(arr) {
   var arr4 = [];
   for (var i = 0; i < arr.length; i++) {
@@ -6,9 +6,8 @@ function largestOfFour(arr) {
   }
   return arr4;
 }
-*/
 
-/* Second iteration
+//Second iteration -EAU
 function largestOfFour(arr) {
   var arr4 = [],
       arrMax = 0;
@@ -23,8 +22,8 @@ function largestOfFour(arr) {
   }
   return arr4;
 }
-*/
 
+//Third iteration -EUT
 function largestOfFour(arr) {
   var arr4 = [],
       arrMax = 0;
@@ -38,4 +37,18 @@ function largestOfFour(arr) {
     arrMax = 0;
   }
   return arr4;
+}
+
+//Fourth iteration -IT
+function largestOfFour(arr) {
+  var openArr = [];
+  for (i = 0; i < arr.length; i++) {
+    for (j = 0; j < arr[i].length; j++) {
+      arr[i].sort(function(a, b) 
+        {return a - b; 
+        });
+      openArr[i] = arr[i][j];
+    }
+  }
+  return openArr;
 }
