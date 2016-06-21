@@ -1,11 +1,9 @@
-/* First Iteration
+//First Iteration
 function titleCase(str) {
   return str.toLowerCase().replace(/(^|\s)[a-z]/g, function(a) {return a.toUpperCase()});
 }
-*/
 
-/* Second Iteration */
-
+//Second Iteration 
 function titleCase(str) {
   var i = 0,
   str = str[0].toUpperCase() + str.substr(1).toLowerCase();
@@ -17,3 +15,17 @@ function titleCase(str) {
   }
   return str;
 }
+
+//Third Iteration -IT
+function titleCase(str) {
+  var array = [];
+  var upper = [];
+  array = str.toLowerCase().split(' ');
+  for (i = 0; i < array.length;  i++) {
+    upper[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);    
+  }
+  var stringy = upper.join().replace(/,/g, ' ');
+  return stringy;
+}
+
+
